@@ -40,7 +40,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnPsychology = new System.Windows.Forms.Button();
             this.btnMythsAndLegends = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnMathematics = new System.Windows.Forms.Button();
             this.btnLogicTasks = new System.Windows.Forms.Button();
             this.btnLiterature = new System.Windows.Forms.Button();
             this.btnCinema = new System.Windows.Forms.Button();
@@ -52,6 +52,7 @@
             this.btnPhysics = new System.Windows.Forms.Button();
             this.btnAccounting = new System.Windows.Forms.Button();
             this.btnLaw = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -94,6 +95,10 @@
             // 
             // btnEngennering
             // 
+            this.btnEngennering.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEngennering.AutoSize = true;
             this.btnEngennering.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEngennering.BackgroundImage")));
             this.btnEngennering.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEngennering.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -106,6 +111,7 @@
             this.btnEngennering.Text = "Engeneering";
             this.btnEngennering.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEngennering.UseVisualStyleBackColor = true;
+            this.btnEngennering.Click += new System.EventHandler(this.btnEngennering_Click);
             // 
             // btnIT
             // 
@@ -188,7 +194,7 @@
             // 
             this.groupBox2.Controls.Add(this.btnPsychology);
             this.groupBox2.Controls.Add(this.btnMythsAndLegends);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.btnMathematics);
             this.groupBox2.Controls.Add(this.btnLogicTasks);
             this.groupBox2.Controls.Add(this.btnLiterature);
             this.groupBox2.Controls.Add(this.btnCinema);
@@ -216,6 +222,7 @@
             this.btnPsychology.Text = "Psychology";
             this.btnPsychology.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPsychology.UseVisualStyleBackColor = true;
+            this.btnPsychology.Click += new System.EventHandler(this.btnPsychology_Click);
             // 
             // btnMythsAndLegends
             // 
@@ -230,20 +237,22 @@
             this.btnMythsAndLegends.TabIndex = 5;
             this.btnMythsAndLegends.Text = "Myths and Legends";
             this.btnMythsAndLegends.UseVisualStyleBackColor = true;
+            this.btnMythsAndLegends.Click += new System.EventHandler(this.btnMythsAndLegends_Click);
             // 
-            // button3
+            // btnMathematics
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(40, 403);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(352, 100);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Mathematics";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnMathematics.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMathematics.BackgroundImage")));
+            this.btnMathematics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMathematics.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMathematics.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMathematics.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnMathematics.Location = new System.Drawing.Point(40, 403);
+            this.btnMathematics.Name = "btnMathematics";
+            this.btnMathematics.Size = new System.Drawing.Size(352, 100);
+            this.btnMathematics.TabIndex = 4;
+            this.btnMathematics.Text = "Mathematics";
+            this.btnMathematics.UseVisualStyleBackColor = true;
+            this.btnMathematics.Click += new System.EventHandler(this.btnMathematics_Click);
             // 
             // btnLogicTasks
             // 
@@ -259,6 +268,7 @@
             this.btnLogicTasks.Text = "Logic Tasks";
             this.btnLogicTasks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLogicTasks.UseVisualStyleBackColor = true;
+            this.btnLogicTasks.Click += new System.EventHandler(this.btnLogicTasks_Click);
             // 
             // btnLiterature
             // 
@@ -272,6 +282,7 @@
             this.btnLiterature.TabIndex = 2;
             this.btnLiterature.Text = "Literature";
             this.btnLiterature.UseVisualStyleBackColor = true;
+            this.btnLiterature.Click += new System.EventHandler(this.btnLiterature_Click);
             // 
             // btnCinema
             // 
@@ -288,6 +299,7 @@
             this.btnCinema.Text = "Cinema";
             this.btnCinema.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCinema.UseVisualStyleBackColor = true;
+            this.btnCinema.Click += new System.EventHandler(this.btnCinema_Click);
             // 
             // btnArtStudies
             // 
@@ -303,9 +315,11 @@
             this.btnArtStudies.Text = "Art Studies";
             this.btnArtStudies.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnArtStudies.UseVisualStyleBackColor = true;
+            this.btnArtStudies.Click += new System.EventHandler(this.btnArtStudies_Click);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.btnForeignLanguages);
             this.groupBox3.Controls.Add(this.btnChemistry);
             this.groupBox3.Controls.Add(this.btnPhilospophy);
@@ -334,6 +348,7 @@
             this.btnForeignLanguages.TabIndex = 5;
             this.btnForeignLanguages.Text = "Foreign Languages";
             this.btnForeignLanguages.UseVisualStyleBackColor = true;
+            this.btnForeignLanguages.Click += new System.EventHandler(this.btnForeignLanguages_Click);
             // 
             // btnChemistry
             // 
@@ -348,6 +363,7 @@
             this.btnChemistry.TabIndex = 4;
             this.btnChemistry.Text = "Chemistry";
             this.btnChemistry.UseVisualStyleBackColor = true;
+            this.btnChemistry.Click += new System.EventHandler(this.btnChemistry_Click);
             // 
             // btnPhilospophy
             // 
@@ -362,6 +378,7 @@
             this.btnPhilospophy.TabIndex = 3;
             this.btnPhilospophy.Text = "Philosophy";
             this.btnPhilospophy.UseVisualStyleBackColor = true;
+            this.btnPhilospophy.Click += new System.EventHandler(this.btnPhilospophy_Click);
             // 
             // btnPhysics
             // 
@@ -376,6 +393,7 @@
             this.btnPhysics.TabIndex = 2;
             this.btnPhysics.Text = "Physics";
             this.btnPhysics.UseVisualStyleBackColor = true;
+            this.btnPhysics.Click += new System.EventHandler(this.btnPhysics_Click);
             // 
             // btnAccounting
             // 
@@ -391,6 +409,7 @@
             this.btnAccounting.Text = "Accounting";
             this.btnAccounting.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAccounting.UseVisualStyleBackColor = true;
+            this.btnAccounting.Click += new System.EventHandler(this.btnAccounting_Click);
             // 
             // btnLaw
             // 
@@ -407,6 +426,21 @@
             this.btnLaw.Text = "Law";
             this.btnLaw.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLaw.UseVisualStyleBackColor = true;
+            this.btnLaw.Click += new System.EventHandler(this.btnLaw_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Login.Properties.Resources.medals;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(40, 607);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 84);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Statistics";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // ChooseCategory
             // 
@@ -423,8 +457,10 @@
             this.Name = "ChooseCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChooseCategory";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ChooseCategory_Load);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -444,7 +480,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnPsychology;
         private System.Windows.Forms.Button btnMythsAndLegends;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnMathematics;
         private System.Windows.Forms.Button btnLogicTasks;
         private System.Windows.Forms.Button btnLiterature;
         private System.Windows.Forms.Button btnCinema;
@@ -456,6 +492,7 @@
         private System.Windows.Forms.Button btnPhysics;
         private System.Windows.Forms.Button btnAccounting;
         private System.Windows.Forms.Button btnLaw;
+        private System.Windows.Forms.Button button1;
 
 
     }

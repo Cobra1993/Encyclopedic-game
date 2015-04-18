@@ -16,5 +16,10 @@ namespace Login.View
         {
             InitializeComponent();
         }
+
+        private void BulgarianLanguage_Load(object sender, EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+        }
     }
 }

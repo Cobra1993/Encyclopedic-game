@@ -16,5 +16,16 @@ namespace Login.View
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ExampleAriticle newArticle = new ExampleAriticle();
+            MessageBox.Show(this.Name);
+            newArticle.Name = "Test1";
+            newArticle.Text = "Article 1";
+            newArticle.Show();
+        }
+
     }
 }

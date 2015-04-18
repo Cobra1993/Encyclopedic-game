@@ -28,95 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grbAstronomy = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.grpBox = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.grbAstronomy.SuspendLayout();
+            this.button5 = new System.Windows.Forms.Button();
+            this.grpBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grbAstronomy
+            // grpBox
             // 
-            this.grbAstronomy.Controls.Add(this.button4);
-            this.grbAstronomy.Controls.Add(this.button3);
-            this.grbAstronomy.Controls.Add(this.button2);
-            this.grbAstronomy.Controls.Add(this.button1);
-            this.grbAstronomy.Location = new System.Drawing.Point(12, 29);
-            this.grbAstronomy.Name = "grbAstronomy";
-            this.grbAstronomy.Size = new System.Drawing.Size(207, 215);
-            this.grbAstronomy.TabIndex = 0;
-            this.grbAstronomy.TabStop = false;
-            this.grbAstronomy.Text = "Astronomy Articles";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(6, 164);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(183, 42);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "ArticleName4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.grpBox.Controls.Add(this.button3);
+            this.grpBox.Controls.Add(this.button2);
+            this.grpBox.Controls.Add(this.button1);
+            this.grpBox.Controls.Add(this.button5);
+            this.grpBox.Location = new System.Drawing.Point(13, 13);
+            this.grpBox.Name = "grpBox";
+            this.grpBox.Size = new System.Drawing.Size(211, 236);
+            this.grpBox.TabIndex = 0;
+            this.grpBox.TabStop = false;
+            this.grpBox.Text = "Astronomy";
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(6, 121);
+            this.button3.Location = new System.Drawing.Point(6, 190);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(183, 42);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "ArticleName3";
+            this.button3.TabIndex = 7;
+            this.button3.Text = "articleName4";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(6, 78);
+            this.button2.Location = new System.Drawing.Point(6, 133);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 42);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "ArticleName2";
+            this.button2.TabIndex = 6;
+            this.button2.Text = "articleName3";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(6, 30);
+            this.button1.Location = new System.Drawing.Point(6, 76);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(183, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "articleName1";
+            this.button1.TabIndex = 5;
+            this.button1.Text = "articleName2";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(6, 19);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(183, 42);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "articleName1";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button1_Click);
             // 
             // Astronomy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(226, 246);
-            this.Controls.Add(this.grbAstronomy);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
+            this.ClientSize = new System.Drawing.Size(236, 261);
+            this.Controls.Add(this.grpBox);
             this.Name = "Astronomy";
             this.Text = "Astronomy";
-            this.grbAstronomy.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Astronomy_Load);
+            this.grpBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grbAstronomy;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.GroupBox grpBox;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
     }
 }

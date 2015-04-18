@@ -103,6 +103,7 @@
             this.MaximizeBox = false;
             this.Name = "BulgarianLanguage";
             this.Text = "BulgarianLanguage";
+            this.Load += new System.EventHandler(this.BulgarianLanguage_Load);
             this.grbBulgarianLanguage.ResumeLayout(false);
             this.ResumeLayout(false);
 

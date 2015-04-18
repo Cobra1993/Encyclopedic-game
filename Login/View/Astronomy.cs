@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login.View;
 
 namespace Login.View
 {
@@ -22,6 +23,15 @@ namespace Login.View
             this.BackColor = System.Drawing.Color.AntiqueWhite;
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AstonomyTests newForm = new AstonomyTests();
+            newForm.Name = "Astronomy";
+            newForm.Text = "Astronomy Tests";
+            this.Close();
+            newForm.Show();
+        }
+
+
     }
 }

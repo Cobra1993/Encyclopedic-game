@@ -28,29 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grbBiology = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Engeneering));
+            this.grbEngineering = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.grbBiology.SuspendLayout();
+            this.grbEngineering.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grbBiology
+            // grbEngineering
             // 
-            this.grbBiology.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grbEngineering.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grbBiology.Controls.Add(this.button4);
-            this.grbBiology.Controls.Add(this.button3);
-            this.grbBiology.Controls.Add(this.button2);
-            this.grbBiology.Controls.Add(this.button1);
-            this.grbBiology.Location = new System.Drawing.Point(16, 19);
-            this.grbBiology.Name = "grbBiology";
-            this.grbBiology.Size = new System.Drawing.Size(200, 222);
-            this.grbBiology.TabIndex = 2;
-            this.grbBiology.TabStop = false;
-            this.grbBiology.Text = "Biology Articles";
+            this.grbEngineering.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.grbEngineering.Controls.Add(this.button4);
+            this.grbEngineering.Controls.Add(this.button3);
+            this.grbEngineering.Controls.Add(this.button2);
+            this.grbEngineering.Controls.Add(this.button1);
+            this.grbEngineering.ForeColor = System.Drawing.Color.Black;
+            this.grbEngineering.Location = new System.Drawing.Point(16, 19);
+            this.grbEngineering.Name = "grbEngineering";
+            this.grbEngineering.Size = new System.Drawing.Size(200, 222);
+            this.grbEngineering.TabIndex = 2;
+            this.grbEngineering.TabStop = false;
+            this.grbEngineering.Text = "Engeneering Articles";
             // 
             // button4
             // 
@@ -100,18 +103,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(232, 261);
-            this.Controls.Add(this.grbBiology);
+            this.Controls.Add(this.grbEngineering);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Engeneering";
             this.Text = "Engeneering";
-            this.grbBiology.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Engeneering_Load);
+            this.grbEngineering.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grbBiology;
+        private System.Windows.Forms.GroupBox grbEngineering;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
