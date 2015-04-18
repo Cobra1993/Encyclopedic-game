@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19DE115E-A05C-4A96-B3B5-7365A8FE3C71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\MySQL\MySQL Connector Net 6.9.6\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\MySQL\MySQL Connector Net 6.9.6\Assemblies\v4.5\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DatabaseConnection.cs" />
+    <Compile Include="View\AstonomyTests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AstonomyTests.Designer.cs">
+      <DependentUpon>AstonomyTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Astronomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Astronomy.Designer.cs">
+      <DependentUpon>Astronomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Biology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Biology.Designer.cs">
+      <DependentUpon>Biology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BulgarianLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BulgarianLanguage.Designer.cs">
+      <DependentUpon>BulgarianLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChooseCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChooseCategory.Designer.cs">
+      <DependentUpon>ChooseCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Engeneering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Engeneering.Designer.cs">
+      <DependentUpon>Engeneering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExampleAriticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExampleAriticle.Designer.cs">
+      <DependentUpon>ExampleAriticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ForgottenPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ForgottenPassword.Designer.cs">
+      <DependentUpon>ForgottenPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Geography.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Geography.Designer.cs">
+      <DependentUpon>Geography.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\IT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\IT.Designer.cs">
+      <DependentUpon>IT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\AstonomyTests.resx">
+      <DependentUpon>AstonomyTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Astronomy.resx">
+      <DependentUpon>Astronomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Biology.resx">
+      <DependentUpon>Biology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BulgarianLanguage.resx">
+      <DependentUpon>BulgarianLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChooseCategory.resx">
+      <DependentUpon>ChooseCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Engeneering.resx">
+      <DependentUpon>Engeneering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExampleAriticle.resx">
+      <DependentUpon>ExampleAriticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ForgottenPassword.resx">
+      <DependentUpon>ForgottenPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Geography.resx">
+      <DependentUpon>Geography.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\IT.resx">
+      <DependentUpon>IT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pictures\1798647_396342033840390_8798083572063537162_n.png" />
+    <Content Include="Pictures\350px-Cosmos.jpg" />
+    <Content Include="Pictures\660775-InformationTechnology-1390199742-798-640x480.jpg" />
+    <Content Include="Pictures\art-therapy-career2.jpg" />
+    <Content Include="Pictures\banner-physical-geography.jpg" />
+    <Content Include="Pictures\biology.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\Disability-in-film-and-TV.jpg" />
+    <Content Include="Pictures\download %281%29.jpg" />
+    <Content Include="Pictures\download %282%29.jpg" />
+    <Content Include="Pictures\engineering-blueprint.jpg" />
+    <Content Include="Pictures\History-of-humankind-300x225.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\home-philosophy01.jpg" />
+    <Content Include="Pictures\images %283%29.jpg" />
+    <Content Include="Pictures\images.jpg" />
+    <Content Include="Pictures\law.jpg" />
+    <Content Include="Pictures\Master-of-Science-in-Accounting.jpg" />
+    <Content Include="Pictures\Mathematics.jpg" />
+    <Content Include="Pictures\myth-stamp.png" />
+    <Content Include="Pictures\physics.jpg" />
+    <Content Include="Pictures\psychologybanner.jpg" />
+    <Content Include="Pictures\word_cloud_language.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
