@@ -19,6 +19,8 @@ namespace Login
 {
     public partial class LoginForm : Form
     {
+
+        public static string loggedInPerson = "";
         public LoginForm()
         {
             InitializeComponent();
@@ -41,7 +43,7 @@ namespace Login
         }
         
 
-        private bool validate_login(string user, string pass)
+        public static bool validate_login(string user, string pass)
         {
             Login.Data.DatabaseConnection.db_connection();
             MySqlCommand cmd = new MySqlCommand();
@@ -49,10 +51,7 @@ namespace Login
             cmd.Parameters.AddWithValue("@user", user);
             cmd.Parameters.AddWithValue("@pass", pass);
             cmd.Connection = Login.Data.DatabaseConnection.connect;
-            MySqlDataReader login = cmd.ExecuteReader();
-
-
-          
+            MySqlDataReader login = cmd.ExecuteReader();         
             
             if (login.Read())
             {
@@ -78,6 +77,7 @@ namespace Login
             bool r = validate_login(user, pass);
             if (r)
             {
+                loggedInPerson = txtBoxUserName.Text;
                 MessageBox.Show("Enjoy the Game!");
                 this.Hide();
                 ChooseCategory newForm = new ChooseCategory();

@@ -46,13 +46,14 @@
             this.btnCinema = new System.Windows.Forms.Button();
             this.btnArtStudies = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnForeignLanguages = new System.Windows.Forms.Button();
             this.btnChemistry = new System.Windows.Forms.Button();
             this.btnPhilospophy = new System.Windows.Forms.Button();
             this.btnPhysics = new System.Windows.Forms.Button();
             this.btnAccounting = new System.Windows.Forms.Button();
             this.btnLaw = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGoToProfile = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -319,6 +320,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnGoToProfile);
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.btnForeignLanguages);
             this.groupBox3.Controls.Add(this.btnChemistry);
@@ -334,6 +336,21 @@
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Choose category";
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Login.Properties.Resources.medals;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(40, 607);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(171, 84);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Statistics";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnForeignLanguages
             // 
@@ -428,19 +445,17 @@
             this.btnLaw.UseVisualStyleBackColor = true;
             this.btnLaw.Click += new System.EventHandler(this.btnLaw_Click);
             // 
-            // button1
+            // btnGoToProfile
             // 
-            this.button1.BackgroundImage = global::Login.Properties.Resources.medals;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(40, 607);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(352, 84);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Statistics";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGoToProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnGoToProfile.ForeColor = System.Drawing.Color.Black;
+            this.btnGoToProfile.Location = new System.Drawing.Point(230, 607);
+            this.btnGoToProfile.Name = "btnGoToProfile";
+            this.btnGoToProfile.Size = new System.Drawing.Size(162, 84);
+            this.btnGoToProfile.TabIndex = 7;
+            this.btnGoToProfile.Text = "PROFILE";
+            this.btnGoToProfile.UseVisualStyleBackColor = true;
+            this.btnGoToProfile.Click += new System.EventHandler(this.btnGoToProfile_Click);
             // 
             // ChooseCategory
             // 
@@ -493,6 +508,7 @@
         private System.Windows.Forms.Button btnAccounting;
         private System.Windows.Forms.Button btnLaw;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGoToProfile;
 
 
     }

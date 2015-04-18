@@ -64,7 +64,7 @@ namespace Login.View
 
 
 
-        private bool validateName(string name)
+       public static bool validateName(string name)
         {
 
             if (String.IsNullOrEmpty(name) || name.Length > 15 || (!(Regex.IsMatch(name, @"^[a-zA-Z]+$"))))
@@ -146,7 +146,7 @@ namespace Login.View
 
 
 
-        private bool validateYears(string years)
+        public static bool validateYears(string years)
         {
             if (!(String.IsNullOrEmpty(years)) && years.All(char.IsDigit))
 
@@ -176,14 +176,14 @@ namespace Login.View
 
 
 
-        private bool matchPasswords(string password, string repeatedPassword)
+      public static  bool matchPasswords(string password, string repeatedPassword)
         {
             
            return (password.Equals(repeatedPassword))?true:false;
            
         }
 
-        private bool validatePassword(string password)
+        public static bool validatePassword(string password)
 
         {
             return (Regex.IsMatch(password, @"[!#$%&'()*+,-.:;<=>?@[\\\]{}^_`|~]"))? true: false;       

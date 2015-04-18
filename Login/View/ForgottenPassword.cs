@@ -120,7 +120,7 @@ namespace Login.View
             var toAddress = new MailAddress(email);
             const string fromPassword = "encyclopedicgame1*Aa";
             const string subject = "Forgotten password";
-            string body = "Hello,\n Your new password is: " + newPassword + ". \nRegards,\n Encyclopedicgame team. ";
+            string body = "Hello,\n Your new password is: " + newPassword + " \nRegards,\n Encyclopedicgame team. ";
 
             var smtp = new SmtpClient
             {

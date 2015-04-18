@@ -164,6 +164,20 @@ namespace Login.View
             newForm.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Statistics statistics = new Statistics();
+            this.Close();
+            statistics.Show();
+        }
+
+        private void btnGoToProfile_Click(object sender, EventArgs e)
+        {
+            UpdateAccount ua = new UpdateAccount();
+            this.Close();
+            ua.Show();
+        }
+
 
     }
 }
